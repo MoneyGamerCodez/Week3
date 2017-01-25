@@ -13,8 +13,8 @@ public class PayCheque {
     private int chequeNumber;
     private static int nextChequeNumber = 10001;
 
-    public PayCheque(LocalDate dateIssued, String employeeName, double amount, String memo) {
-        this.dateIssued = dateIssued;
+    public PayCheque( String employeeName, double amount, String memo) {
+        this.dateIssued = LocalDate.now();
         this.employeeName = employeeName;
         this.amount = amount;
         this.memo = memo;
@@ -23,6 +23,23 @@ public class PayCheque {
         nextChequeNumber++;
     }
 
+    public LocalDate getDateIssued() {
+        return dateIssued;
+    }
 
+    public String getEmployeeName() {
+        return employeeName;
+    }
 
+    public double getAmount() {
+        return amount;
+    }
+
+    public String getMemo() {
+        return memo;
+    }
+
+    public int getChequeNumber() {
+        return chequeNumber;
+    }
 }

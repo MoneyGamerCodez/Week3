@@ -11,10 +11,11 @@ public class HourlyEmployee extends Employee {
 
     public HourlyEmployee(String first, String last, int sin, LocalDate dob) {
         super(first, last, sin, dob);
-    }
-    hoursWorked=0;
 
-    setPayRate(payRate);
+        hoursWorked=0;
+
+    }
+
 
     //this method will validate that the pay rate is above minimum wage and set the instance variable
 
@@ -24,6 +25,7 @@ public class HourlyEmployee extends Employee {
             this.hourlyRate = payRate;
         else
             throw new IllegalArgumentException("hey cheapo - minimum wage is " + minimumWage);
+        setPayRate(payRate);
     }
 
     //this method will add hours worked to the employees history

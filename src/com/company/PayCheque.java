@@ -21,7 +21,7 @@ public class PayCheque {
         chequeNumber = nextChequeNumber;
 
         nextChequeNumber++;
-    }
+    }//code below is a getter
 
     public LocalDate getDateIssued() {
         return dateIssued;

@@ -6,7 +6,7 @@ import java.time.Month;
 public class Main {
 
     public static void main(String[] args) {
-	HourlyEmployee employee1 = new HourlyEmployee("Fred","Flintstone",1234, LocalDate.of(1998, Month.MARCH, 14), 30);
+	HourlyEmployee employee1 = new HourlyEmployee("Fred","Flintstone",1234, LocalDate.of(1998, Month.MARCH, 14), 20);
         /* set as year-month-date */
         HourlyEmployee employee2 = new HourlyEmployee("Thomas","Ratulowski",1234, LocalDate.of(1998, Month.MAY, 8),30);
 
@@ -16,5 +16,8 @@ public class Main {
 
         System.out.printf("Employee2 is %s%n", employee1);
         System.out.printf("The employee was born on %s, that was a %s%n", employee2.getDateOfBirth(),employee2.getDateOfBirth().getDayOfWeek());
+
+        employee1.addHoursWorked(30);
+        System.out.printf("the pay cheque for employee 1 is %s%n",employee1.getPayCheque());
     }
 }

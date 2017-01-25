@@ -6,9 +6,9 @@ import java.time.Month;
 public class Main {
 
     public static void main(String[] args) {
-	Employee employee1 = new Employee("Fred","Flintstone",1234, LocalDate.of(1998, Month.MARCH, 14));
+	HourlyEmployee employee1 = new HourlyEmployee("Fred","Flintstone",1234, LocalDate.of(1998, Month.MARCH, 14), 30);
         /* set as year-month-date */
-        Employee employee2 = new Employee("Thomas","Ratulowski",1234, LocalDate.of(1998, Month.MAY, 8));
+        HourlyEmployee employee2 = new HourlyEmployee("Thomas","Ratulowski",1234, LocalDate.of(1998, Month.MAY, 8),30);
 
 
         System.out.printf("Employee1 is %s%n", employee1);

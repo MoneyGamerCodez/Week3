@@ -9,11 +9,11 @@ public class HourlyEmployee extends Employee {
     private double minimumWage = 11.40;
     private double hourlyRate, hoursWorked;
 
-    public HourlyEmployee(String first, String last, int sin, LocalDate dob) {
+    public HourlyEmployee(String first, String last, int sin, LocalDate dob, int hourlyRate) {
         super(first, last, sin, dob);
 
         hoursWorked=0;
-
+        setPayRate(hourlyRate);
     }
 
 

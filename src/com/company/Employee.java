@@ -6,7 +6,7 @@ import java.time.Period;
 /**
  * Created by Thomas on 2017-01-25.
  */
-public class Employee {//the instance variables
+public abstract class Employee {//the instance variables
     private String firstName, lastName;
     private int socialInsuranceNum;
     private LocalDate dateOfBirth;
@@ -51,6 +51,9 @@ public class Employee {//the instance variables
     public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
+
+    public abstract PayCheque getPayCheque();
+
 
 
 }//end of class

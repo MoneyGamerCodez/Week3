@@ -25,7 +25,6 @@ public class HourlyEmployee extends Employee {
             this.hourlyRate = payRate;
         else
             throw new IllegalArgumentException("hey cheapo - minimum wage is " + minimumWage);
-        setPayRate(payRate);
     }
 
     //this method will add hours worked to the employees history

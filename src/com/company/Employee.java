@@ -36,6 +36,17 @@ public class Employee {//the instance variables
 
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getSocialInsuranceNum() {
+        return socialInsuranceNum;
+    }
 
     public LocalDate getDateOfBirth() {
         return dateOfBirth;

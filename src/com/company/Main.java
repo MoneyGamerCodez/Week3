@@ -12,5 +12,8 @@ public class Main {
 
 	System.out.printf("Employee1 is %s%n", employee1);
 	System.out.printf("The employee was born on %s, that was a %s%n", employee1.getDateOfBirth(),employee1.getDateOfBirth().getDayOfWeek());
+
+        System.out.printf("Employee2 is %s%n", employee1);
+        System.out.printf("The employee was born on %s, that was a %s%n", employee2.getDateOfBirth(),employee2.getDateOfBirth().getDayOfWeek());
     }
 }

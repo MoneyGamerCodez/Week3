@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 	Employee employee1 = new Employee("Fred","Flintstone",1234, LocalDate.of(1998, Month.MARCH, 14));
-        Employee employee2 = new Employee("Thomas","Ratulowski",1234, LocalDate.of(1998, Month.MAY, 8));
+        Employee employee2 = new Employee("Thomas","Ratulowski",1234, LocalDate.of(1998, Month.MAY, 8));//set as year-month-date
 
 
 	System.out.printf("Employee1 is %s%n", employee1);

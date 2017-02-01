@@ -27,7 +27,7 @@ public class CommissionEmployee extends Employee {
         if(newSalesAmount > 0)
             this.monthlySales += newSalesAmount;
         else
-            throw new IllegalArgumentException("invslid amount");
+            throw new IllegalArgumentException("invalid amount");
     }
 
     @Override
@@ -35,5 +35,7 @@ public class CommissionEmployee extends Employee {
         double payAmount = commisionRate/100 * monthlySales;
 
         PayCheque newPay = new PayCheque(super.toString(), payAmount, "commission pay");
+
+
     }
 }

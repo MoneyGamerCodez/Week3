@@ -36,6 +36,9 @@ public class CommissionEmployee extends Employee {
 
         PayCheque newPay = new PayCheque(super.toString(), payAmount, "commission pay");
 
+        monthlySales = 0;
+        return newPay;
+
 
     }
 }
